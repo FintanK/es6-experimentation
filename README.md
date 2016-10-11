@@ -147,9 +147,23 @@ Woring with numbers example
 https://babeljs.io/repl/#?babili=false&evaluate=true&lineWrap=false&presets=es2015%2Creact%2Cstage-2&code=%2F%2F%20Parse%20binary%20number%0D%0Avar%20number%20%3D%20Number(%220b101%22)%3B%0D%0Aconsole.log(%22Parse%20Binary%20Number%3A%20%22%20%2B%20%20number)%3B%0D%0A%0D%0A%2F%2F%20Parse%20Integer%0D%0Avar%20number%20%3D%20Number.parseInt(%223%22)%3B%0D%0Aconsole.log(%22Parse%20Integer%3A%20%22%20%2B%20number)%3B%0D%0A%0D%0A%2F%2F%20Parse%20Float%0D%0Avar%20number%20%3D%20Number.parseFloat(%223.56%22)%3B%0D%0Aconsole.log(%22Parse%20Float%3A%20%22%20%2B%20number)%3B%0D%0A%0D%0A%2F%2F%20Check%20if%20a%20number%20is%20finite%0D%0Aconsole.log(%22Global%20Finite%20Check%3A%20%22%20%2B%20isFinite(%221%22))%3B%0D%0Aconsole.log(%22Number%20Object%20Finite%20Check%3A%20%22%20%2B%20Number.isFinite(%221%22))%3B%0D%0A%0D%0A%2F%2F%20Check%20if%20provided%20values%20are%20not%20numbers%0D%0Aconsole.log(%22Global%20%3A%20Is%20NaN%20a%20number%3F%20%3A%20%22%20%2B%20isFinite(%22Nan%22))%3B%0D%0Aconsole.log(%22Is%20NaN%20a%20number%3F%20%3A%20%22%20%2B%20Number.isFinite(%22Nan%22))%3B%0D%0A%0D%0A
 
 
-## Asynchronous Javscript (TBC)
+## Asynchronous Javscript
 
 Promises like the ones supported by Angular are to be made part of ES6.
+
+The main benefit that promises provide is removing the complexity of normal callbacks and the error handling for all the exceptions that come with them. No more "Callback hell".
+
+![Promises in ES6](http://image.slidesharecdn.com/es6-introduction-151202131610-lva1-app6891/95/introduction-into-es6-javascript-30-638.jpg?cb=1449062282)
+
+### Promises
+
+Basic example of promoises with resolve and exceptions
+https://babeljs.io/repl/#?babili=false&evaluate=true&lineWrap=false&presets=es2015%2Creact%2Cstage-2&code=var%20promise%20%3D%20new%20Promise(function(resolve%2C%20reject)%7B%0D%0A%20%20resolve(%22Resolved!%22)%3B%0D%0A%7D)%3B%0D%0A%0D%0Apromise.then(function(data)%7B%0D%0A%20%20console.log(data)%3B%0D%0A%20%20done()%3B%0D%0A%7D)%3B%0D%0A%0D%0Apromise%20%3D%20new%20Promise(function(resolve%2C%20reject)%7B%0D%0A%20%20reject(%22Rejected!%22)%3B%0D%0A%7D)%3B%0D%0A%0D%0Apromise.catch(function(error)%7B%0D%0A%20%20console.log(error)%3B%0D%0A%20%20done()%3B%0D%0A%7D)%3B%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A
+
+### Generators
+
+https://medium.com/@dtothefp/why-can-t-anyone-write-a-simple-es6-generators-tutorial-ec2bbdf6ff45#.asr59j9wb - ;)
+
 
 ## Modules in Javascript  (TBC)
 
@@ -170,6 +184,8 @@ https://lightrains.com/blogs/es6-transpilers
 
 http://es6-features.org/
 https://github.com/lukehoban/es6features
+
+
 
 
 
